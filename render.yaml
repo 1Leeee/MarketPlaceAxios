@@ -1,0 +1,14 @@
+services:
+  - name: frontend
+    env: node
+    buildCommand: npm run build
+    startCommand: npm run start
+    buildDir: frontend
+    
+
+  - name: backend
+    env: node
+    buildCommand: npm run build
+    startCommand: npm run start
+    buildDir: backend
+   
