@@ -1,10 +1,10 @@
-import path from 'path';
-import nodeExternals from 'webpack-node-externals';
+const path = require('path');
+const nodeExternals = require('webpack-node-externals');
 
-export default {
+module.exports = {
   target: 'node',
   mode: 'production',
-  entry: './server.js',
+  entry: './server.js', // Asegúrate de que el camino al archivo de entrada sea correcto
   output: {
     filename: 'server.bundle.js',
     path: path.resolve(__dirname, 'dist'),
